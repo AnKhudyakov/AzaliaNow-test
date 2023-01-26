@@ -1,0 +1,47 @@
+$minWind: 320px;
+$maxWidth: 1920px;
+$maxWidthContainer: 1780px;
+$bp1: $maxWidthContainer + 60px;
+$bp2: 1478px;
+$bp3: 1116px;
+$bp4: 784px;
+
+.main {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  height: fit-content;
+}
+
+.container {
+  position: relative;
+  margin: 26px auto;
+  text-align: center;
+  max-width: $maxWidthContainer;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 332px);
+  grid-template-rows: repeat(2, 462px);
+  row-gap: 30px;
+  column-gap: 30px;
+  @media (max-width: $bp1) {
+    max-width: 1418px;
+    grid-template-columns: repeat(4, 332px);
+    grid-template-rows: repeat(3, 462px);
+  }
+  @media (max-width: $bp2) {
+    max-width: 1056px;
+    grid-template-columns: repeat(3, 332px);
+    grid-template-rows: repeat(4, 462px);
+  }
+  @media (max-width: $bp3) {
+    max-width: 724px;
+    grid-template-columns: repeat(2, 332px);
+    grid-template-rows: repeat(5, 462px);
+  }
+  @media (max-width: $bp4) {
+    max-width: 332px;
+    grid-template-columns: repeat(1, 332px);
+    grid-template-rows: repeat(9, 462px);
+  }
+}

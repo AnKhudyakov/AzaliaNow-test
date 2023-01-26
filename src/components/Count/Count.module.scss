@@ -1,0 +1,68 @@
+%tpbtn {
+  height: 40px;
+  border-radius: 90px;
+  line-height: 20px;
+  font-weight: 500;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+%tpminus {
+  position: absolute;
+  background: #2e2e33;
+  opacity: 0.3;
+  width: 10px;
+  height: 2px;
+  right: 15px;
+  top: 19px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn_before {
+  @extend %tpbtn;
+  background: #4056a1;
+  width: 100px;
+}
+
+.btn {
+  @extend %tpbtn;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #f5f5f7;
+  width: 175px;
+  z-index: 1;
+}
+
+.minus {
+  @extend %tpminus;
+  right: 55px;
+}
+
+.minus_plus {
+  @extend %tpminus;
+  right: 0px;
+  top: 4px;
+}
+
+.minus_rotate{
+  @extend %tpminus;
+  transform: rotate(90deg);
+}
+
+.plus{
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 10px;
+  height: 10px;
+}
+
+.count {
+  position: absolute;
+  top: 10px;
+  right: 37px;
+}

@@ -1,0 +1,26 @@
+%tpbtn {
+  height: 40px;
+  border-radius: 90px;
+  color: #ffffff;
+  line-height: 20px;
+  font-weight: 500;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.btn_before {
+  @extend %tpbtn;
+  background: #4056a1;
+  width: 100px;
+}
+
+.btn_after {
+  @extend %tpbtn;
+  background: #00b177;
+  width: 175px;
+}

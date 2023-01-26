@@ -1,0 +1,19 @@
+.rating {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 162px;
+  height: 14px;
+  top: 3px;
+  right: 0;
+}
+
+.rate {
+  color: #999;
+  line-height: 14px;
+  text-decoration-line: underline;
+}
+
+.star {
+  margin-right: 4px;
+}
